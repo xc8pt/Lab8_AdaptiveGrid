@@ -1,0 +1,70 @@
+.page-layout {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main widgets"
+        "footer footer footer";
+    grid-template-columns: 200px 300px 300px;
+    grid-template-rows: 80px 1fr 60px;
+    gap: 15px;
+    height: 600px;
+}
+
+.widget-container {
+    grid-area: widgets;
+    display: grid;
+    grid-template-areas:
+        "widget1"
+        "widget2";
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    grid-area: main;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.widget1 {
+    grid-area: widget1;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.widget2 {
+    grid-area: widget2;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
